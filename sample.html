@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>
+		TEST Form
+	</title>
+	<style>
+		/* Styling the Body element*/
+		body {
+			background-color: #b5c7d6;
+			font-family: Verdana;
+			text-align: center;
+		}
+		/* Styling the Form */
+		form {
+			background-color: #e4f3a4;
+			max-width: 750px;
+			margin: 50px auto;
+			padding: 30px 20px;
+		}
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		/* Styling form-control input,select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #000;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+		/* Styling Radio button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+		/* Styling Button */
+		button {
+			background-color: #e05930;
+			border: 5px solid #000;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 25px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>TEST SAMPLE FORM</h1>
+	<form id="form">
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+			<input type="text" id="name"placeholder="Enter your name" />
+		</div>
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+			<input type="email" id="email"	placeholder="Enter your email" />
+		</div>
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+			<input type="text" id="age"	placeholder="Enter your age" />
+		</div>
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="teacher">Teacher</option>
+				<option value="employee">Employee</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+		<div class="form-control">
+			<label>
+				Do you have Knowledge about programming ?
+			</label>
+
+			<label for="Yes">
+				<input type="radio" id="No"name="Yes">Yes
+				</input>
+			</label>
+			<label for="No">
+				<input type="radio" id="No"
+					name="recommed">No
+				</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Would you want to become programmer ?
+			</label>
+			<label for="Yes">
+				<input type="radio" id="No"name="Yes">Yes
+				</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio" id="No"
+					name="recommed">No
+				</input>
+			</label>
+		</div>
+		<div class="form-control">
+			<label>Languages you known :		
+			</label>
+			<label for="Language-1">
+				<input type="checkbox" name="inp">C
+				</input>
+			</label>
+			<label for="Language-2">
+				<input type="checkbox" name="inp">C++
+				</input>
+			</label>
+			<label for="Language-3">
+				<input type="checkbox" name="inp">JavaScript
+				</input>
+			</label>
+			<label for="Language-4">
+				<input type="checkbox" name="inp">Java
+				</input>
+			</label>
+			<label for="Language-5">
+				<input type="checkbox" name="inp">Python
+				</input>
+			</label>
+		</div>
+		<div class="form-control">
+			<label for="comment">
+				Any suggestions :
+			</label>
+			<textarea name="comment" id="comment"placeholder="Enter your comment here">
+            </textarea>
+		</div>
+		<button type="submit" value="submit">
+			SUBMIT
+		</button>
+	</form>
+</body>
+</html>
