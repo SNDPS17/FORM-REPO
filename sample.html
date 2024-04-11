@@ -17,6 +17,12 @@
 			font-family: Verdana;
 			text-align: center;
 		}
+
+		@media (min-width : 300) and (max-width :1240) {
+			#form-control{
+				display :block;
+			}
+		}
 		/* Styling the Form */
 		form {
 			background-color: #e4f3a4;
@@ -84,7 +90,7 @@
 			<label for="age" id="label-age">
 				Age
 			</label>
-			<input type="text" id="age"	placeholder="Enter your age" />
+			<input type="number" id="age"	placeholder="Enter your age" />
 		</div>
 		<div class="form-control">
 			<label for="role" id="label-role">
@@ -103,7 +109,7 @@
 			</label>
 
 			<label for="Yes">
-				<input type="radio" id="No"name="Yes">Yes
+				<input type="radio" id="No"name="recommed">Yes
 				</input>
 			</label>
 			<label for="No">
@@ -118,7 +124,7 @@
 				Would you want to become programmer ?
 			</label>
 			<label for="Yes">
-				<input type="radio" id="No"name="Yes">Yes
+				<input type="radio" id="No"name="recommed">Yes
 				</input>
 			</label>
 			<label for="recommed-2">
