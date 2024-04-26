@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Register yourself</title>
+		<style>
+            html {
+	background-color:#183c28;
+	background-position: center center;
+	background-size: auto;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: open sans;
+}
+.main-form {
+	box-sizing: border-box;
+	position:absolute;
+	left:30%;
+	top:70px;
+	background-color:white;
+	width:40%;
+	padding:50px 40px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+	box-sizing:border-box;
+	font-size: medium;
+	width:100%;
+	padding:15px;
+	margin:5px 0 15px 0;
+	border:0.5px solid #f1f1f1;
+}
+input[type="radio"]{
+	display: inline-block;
+	width: auto;
+}
+select{
+			border: 1px solid #000;
+			border-radius: 2px;
+			font-family: inherit;
+            font-size: medium;
+			padding: 15px;
+			display: block;
+			width: 100%;
+		}
+input[type="submit"]{
+	box-sizing:border-box;
+	width:100%;
+	padding:10px;
+	color:#fff;
+	background-color:#183c28;
+	border:none;
+	cursor:pointer;
+}
+h1 {
+	color:#162b1b;
+	opacity:0.9;
+	text-align:center;
+	padding:10px;
+	padding-top:0;
+}
+form label {
+	opacity:0.8;
+	padding-bottom:10px;
+	font-weight:600;
+}
+        </style>
+	</head>
+	<body>
+		<div class="main-form">
+			<h1>Create your account</h1>
+			<form>
+				<label for="fname">FIRST NAME</label>
+				<br>	
+				<input id="fname"type="text" name="f-name" placeholder="First Name">
+                <br>
+				<label for="lname">LAST NAME</label>
+				<br>	
+				<input id="lname"type="text" name="l-name" placeholder="Last Name">
+				<br>
+                <label for="age" id="label-age">AGE </label>
+                <br>
+                <input type="number" id="age" placeholder="Enter your age" />
+                <br>
+				<label>GENDER</label>
+				<br>
+				<br>
+				<input type="radio" id="gender"name="recommed"> Male </input>
+				<br> <br>
+				<input type="radio" id="gender"name="recommed"> Female </input>
+				<br>
+				<br>
+                <label for="role" id="label-role"> WHICH OPTION BEST DESCRIBES YOU? </label>
+                <br>
+				<br>
+                <select name="role" id="role">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="employee">Employee</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
+				<label for="email">EMAIL</label>
+				<br>
+				<input id="email" type="email" name="mail" placeholder="Email">
+				<br>
+				<label for="password">PASSWORD</label>
+				<br>
+				<input id="password" type="password" name="password" placeholder="Password">
+				<br><br>
+				<input type="submit" value="REGISTER">
+			</form>	
+		</div>
+	</body>
+</html>

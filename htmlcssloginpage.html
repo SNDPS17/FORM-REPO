@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<title>LOGIN PAGE</title>
+		<style>
+       html {
+	background-color: #183c28;
+	background-position: center center;
+	background-size: auto;
+}
+		body {
+			padding: 0;
+			margin: 0;
+			font-family: open sans;
+		}
+		.main-form {
+			position:absolute;
+			left:35%;
+			top:70px;
+			background-color:white;
+			width:30%;
+			padding:50px 40px;
+		}
+		input[type="email"],
+		input[type="password"] {
+			box-sizing:border-box;
+			width:100%;
+			padding:15px;
+			margin:5px 0 15px 0;
+			border:0.5px solid #f1f1f1;
+		}
+		input[type="submit"]{
+			box-sizing:border-box;
+			width:100%;
+			padding:10px;
+			color:#fff;
+			background-color:#183c28;
+			border:none;
+			cursor:pointer;
+		}
+		h1 {
+			color:#162b1b;
+			opacity:0.9;
+			text-align:center;
+			padding:10px;
+			padding-top:0;
+        }
+        h5{
+            font-size: small;
+            text-align: center;
+        }
+		form label {
+			opacity:0.8;
+			padding-bottom:10px;
+			font-weight:600;
+		}
+    </style>
+	</head>
+	<body>
+		<div class="main-form">
+			<h1>LOG IN</h1>
+			<form>
+				<label for="mail">EMAIL</label>
+				<br>	
+				<input id="mail"type="email" name="id" placeholder="email-id@gmail.com">
+				<br>
+				<label for="password">PASSWORD</label>
+				<br>
+				<input Id="password" type="password" name="password" placeholder="Password">
+				<br><br>
+				<input type="submit" value="SIGN IN">
+			</form>	
+            <h5> Already have an account ? then
+            <a href="htmlcsssignuppage.html">Sign-up</a> 
+			</h5>
+		</div>
+	</body>
+</html>
